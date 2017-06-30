@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="keywords" content="userRegistration, login, authentication, authorization " />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <form class="form-group" action="">
+    <center>
+      <h1 class="page-header"><kbd>Registration Form</kbd></h1>
+      <div class="form-group">
+        <div class="form-group">
+          <div id="Duname" class="glyphicon glyphicon-user">
+            <input id="txtUname" type="text" onkeydown="remove(1)" placeholder="Username">
+          </div>
+          <div id="Dpass" class="glyphicon glyphicon-lock">
+            <input id="txtPass" type="password" onkeydown="remove(2)" placeholder="Password">
+          </div>
+          <div id="Demail" class="glyphicon glyphicon-envelope">
+            <input id="txtEmail" type="text" onkeydown="remove(3)" placeholder="Email">
+          </div>
+          <div id="Dloc" class="glyphicon glyphicon-map-marker">
+            <input id="txtLocation" type="text" onkeydown="remove(4)" placeholder="Location">
+          </div>
+          <div id="Dgender">
+            <input id="txtMale" type="radio" name="gender" class="gender" onclick="remove(6)" value="Male">
+            <text>Male</text>
+            <input id="txtFemale" type="radio" name="gender" class="gender" onclick="remove(6)" value="Female">
+            <text>Female</text>
+          </div>
+          <div id="Dorg" class="glyphicon glyphicon-book">
+            <input id="txtOrg" type="text" onkeydown="remove(5)" placeholder="Organization">
+          </div>
+        </div>
+        <br/>
+        <div class="form-group">
+          <input id="btnRegister" type="button" class="btn btn-primary" onclick=validate() value="Register">
+        </div>
+      </div>
+    </center>
+  </form>
+  <br/>
+
+  <div id="DivTable"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
